@@ -7,6 +7,7 @@ public class PopulateDatabase {
         System.out.println("DROP TABLE Roster");
         System.out.println("DROP TABLE Teacher_Schedule");
         System.out.println("DROP TABLE Student_schedule");
+        System.out.println("DROP TABLE Assignments");
         System.out.println("DROP TABLE Courses");
         System.out.println("DROP TABLE CourseName");
         System.out.println("DROP TABLE Departments");
