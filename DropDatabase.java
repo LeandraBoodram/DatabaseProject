@@ -1,4 +1,4 @@
-public class PopulateDatabase {
+public class DropDatabase {
     public static void main(String[] args) {
         System.out.println("DROP TABLE Student_Schedules;");
         System.out.println("DROP TABLE Teacher_Schedules;");
