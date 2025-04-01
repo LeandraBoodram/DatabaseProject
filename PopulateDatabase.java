@@ -1,5 +1,16 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
+        int k = 0;
+        boolean department = false
+        for (int i = 0; i < teacherNames.size(); i++) {
+            String[] seperateNames = teacherNames.get(i).split(" ");
+            //case switch with department name...
+            if (department) System.out.println("INSERT  INTO Teacher ( FirstName, LastName, Id, departmentId ) VALUES ( " + seperateNames[0] + ", " + seperateNames[1] + ", " + (i + 1) + " );");
+        }
         ArrayList<String> teacherNames = getFileData("src/teacherName.csv");
         for (int i = 0; i < teacherNames.size(); i++) {
             String[] seperateNames = teacherNames.get(i).split(" ");
