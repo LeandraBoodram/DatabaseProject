@@ -1,8 +1,8 @@
 Department,Class,Class_type
 Biology,Anatomy,2
-Biology,AP Biology,AP
-Biology,AP Environmental,AP
-Biology,AP Psychology,AP
+Biology,AP Biology,3
+Biology,AP Environmental,3
+Biology,AP Psychology,3
 Biology,Bioorganic,2
 Chemistry,Genetics,2
 Chemistry,Introduction to Neuroscience,2
@@ -10,14 +10,14 @@ Chemistry,Living Environment,1
 Chemistry,Living Environment Lab,1
 Chemistry,Environmental Sustainability,2
 Chemistry,Regents Chemistry,1
-Chemistry,AP Chemistry,AP
+Chemistry,AP Chemistry,3
 Chemistry,Chemical Engineering,2
 Chemistry,Organic Chemistry,2
 Chemistry,MICA,2
 Chemistry,Quantitative Analysis,2
 Chemistry,Forensics,2
-CTE,AP Computer Science Principles (10th Grade),AP
-CTE,AP Computer Science A,AP
+CTE,AP Computer Science Principles (10th Grade),3
+CTE,AP Computer Science A,3
 CTE,Big Data Warehousing & Analytics,2
 CTE,Computer Science & Engineering Home,2
 CTE,Cyber Security,2
