@@ -16,7 +16,7 @@ public class PopulateDatabase {
         System.out.println("CREATE TABLE Student (Name varchar(255), Id integer PRIMARY KEY );\n" +
                 "CREATE TABLE Teacher (FirstName varchar(255), LastName varchar(255), Id integer PRIMARY KEY, departmentId integer, FOREIGN KEY (departmentId) REFERENCES Departments(Id));\n" +
                 "CREATE TABLE CourseName (CourseName varchar(255), CourseNameId integer PRIMARY KEY );\n" +
-                "CREATE TABLE Departments (Id integ`    er PRIMARY KEY, Name varchar(255), NumOfTeachers integer );\n" +
+                "CREATE TABLE Departments (Id integer PRIMARY KEY, Name varchar(255), NumOfTeachers integer );\n" +
                 "CREATE TABLE CourseType (Id integer PRIMARY KEY, Name varchar(255) );\n" +
                 "CREATE TABLE Room (Id integer PRIMARY KEY, Name varchar(255) );\n" +
                 "CREATE TABLE Courses (CourseNameId integer, CourseId integer PRIMARY KEY, TypeId integer, RoomId integer, TeacherId integer, StudentId integer, FOREIGN KEY (CourseNameId) REFERENCES CourseName(CourseNameId), FOREIGN KEY (TypeId) REFERENCES CourseType(Id), FOREIGN KEY (RoomId) REFERENCES Room(Id), FOREIGN KEY (TeacherId) REFERENCES Teacher(Id), FOREIGN KEY (StudentId) REFERENCES Student(Id));\n" +
