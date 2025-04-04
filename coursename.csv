@@ -1,123 +1,123 @@
 Department,Class,Class_type
-Biology,Anatomy,Elective
+Biology,Anatomy,2
 Biology,AP Biology,AP
 Biology,AP Environmental,AP
 Biology,AP Psychology,AP
-Biology,Bioorganic,Elective
-Chemistry,Genetics,Elective
-Chemistry,Introduction to Neuroscience,Elective
-Chemistry,Living Environment,Regents
-Chemistry,Living Environment Lab,Regents
-Chemistry,Environmental Sustainability,Elective
-Chemistry,Regents Chemistry,Regents
+Biology,Bioorganic,2
+Chemistry,Genetics,2
+Chemistry,Introduction to Neuroscience,2
+Chemistry,Living Environment,1
+Chemistry,Living Environment Lab,1
+Chemistry,Environmental Sustainability,2
+Chemistry,Regents Chemistry,1
 Chemistry,AP Chemistry,AP
-Chemistry,Chemical Engineering,Elective
-Chemistry,Organic Chemistry,Elective
-Chemistry,MICA,Elective
-Chemistry,Quantitative Analysis,Elective
-Chemistry,Forensics,Elective
+Chemistry,Chemical Engineering,2
+Chemistry,Organic Chemistry,2
+Chemistry,MICA,2
+Chemistry,Quantitative Analysis,2
+Chemistry,Forensics,2
 CTE,AP Computer Science Principles (10th Grade),AP
 CTE,AP Computer Science A,AP
-CTE,Big Data Warehousing & Analytics,Elective
-CTE,Computer Science & Engineering Home,Elective
-CTE,Cyber Security,Elective
-CTE,Digital Electronics (Project Lead the Way),Elective
-CTE,Digital Systems Design,Elective
-CTE,Fundamentals of IT Infrastructure,Elective
-CTE,Green Building Construction,Elective
-CTE,PLTW EDD,Elective
-CTE,Statics,Elective
-CTE,Strength of Materials,Elective
-CTE,Web Development,Elective
-English,9th Grade English,Elective
-English,10th Grade English,Elective
-English,AP Capstone Seminar,AP
-English,11th Grade English,Regents
-English,AP English Language & Composition,AP
-English,AP Capstone Research,AP
-English,AP English Literature & Composition,AP
-English,Creative Writing,Elective
-English,Drama,Elective
-English,Film & Literature,Elective
-English,Journalism,Elective
-English,Life,Elective
-English,Love & Death,Elective
-English,Mystery,Elective
-English,Horror & the Supernatural,Elective
-English,Science Fiction & Fantasy,Elective
-English,Yearbook,Elective
-English,The Survey (Tech's Student Newspaper),AP
-Health & PE,Health Education,Elective
-Health & PE,Physical Education,Elective
-LOTE,Chinese,Regents
-LOTE,AP Chinese Language and Culture,AP
-LOTE,French,Regents
-LOTE,AP French Language and Culture,AP
-LOTE,German,Regents
-LOTE,AP German Language and Culture,AP
-LOTE,Italian,Regents
-LOTE,AP Italian Language and Culture,AP
-LOTE,Spanish,Regents
-LOTE,Spanish IV - Pre-AP,Elective
-LOTE,AP Spanish Language and Culture,AP
-LOTE,AP Spanish Literature and Culture,AP
-Mathematics,Common Core Algebra,Regents
-Mathematics,Common Core Geometry,Regents
-Mathematics,Common Core Algebra II,Regents
-Mathematics,Pre-Calculus,Elective
-Mathematics,Calculus (non-AP),Elective
-Mathematics,AP Calculus (AB),AP
-Mathematics,AP Calculus (BC),AP
-Mathematics,AP Statistics,AP
-Mathematics,Multivariable Calculus,Elective
-Mathematics,Math Research,Elective
-Mathematics,Linear Algebra,Elective
-Physics,Regents Physics,Regents
-Physics,Regents Physics Labs,Regents
-Physics,AP Physics 1,AP
-Physics,AP Physics 2,AP
-Physics,AP Physics C (Mechanics),AP
-Physics,AP Physics C (E/M),AP
-Physics,Astronomy,Elective
-Physics,Modern Physics,Elective
-Social Studies,9th Grade Global,Elective
-Social Studies,10th Grade Regents Global History,Regents
-Social Studies,AP World History,AP
-Social Studies,AP European History,AP
-Social Studies,11th Grade Regents American History,Regents
-Social Studies,AP American History,AP
-Social Studies,Participation in Government,Elective
-Social Studies,AP US Government,AP
-Social Studies,Economics,Elective
-Social Studies,AP Macroeconomics,AP
-Social Studies,AP Microeconomics,AP
-Social Studies,AP Comparative Government,AP
-Social Studies,AP Psychology,AP
-Social Studies,AP Human Geography,AP
-Social Studies,Sociology,Elective
-Social Studies,Cultural Anthropology,Elective
-Social Studies,Physical Anthropology,Elective
-Visual & Performing Arts,Adobe Digital Video,Elective
-Visual & Performing Arts,Adobe Visual Design,Elective
-Visual & Performing Arts,Architectural Drawing w/CAD,Elective
-Visual & Performing Arts,Digital Animation,Elective
-Visual & Performing Arts,PLTW CEA,Elective
-Visual & Performing Arts,PLTW DDP (9th Grade),Elective
-Visual & Performing Arts,AP Music Theory,AP
-Visual & Performing Arts,Basic Strings,Elective
-Visual & Performing Arts,Beginning Musicianship and Chorus,Elective
-Visual & Performing Arts,Collaborative Piano/Choral Accompaniment,Elective
-Visual & Performing Arts,Concert Band,Elective
-Visual & Performing Arts,Concert Choir,Elective
-Visual & Performing Arts,Intermediate Orchestra,Elective
-Visual & Performing Arts,Jazz Band,Elective
-Visual & Performing Arts,Junior Band,Elective
-Visual & Performing Arts,Orchestra,Elective
-Visual & Performing Arts,String Orchestra,Elective
-Visual & Performing Arts,Symphonic Band,Elective
-Visual & Performing Arts,Treble Choir,Elective
-Visual & Performing Arts,Tech Chorale,Elective
-Visual & Performing Arts,Fundamentals of Product Design,Elective
-Visual & Performing Arts,Methods of Fabrication,Elective
-Visual & Performing Arts,Advanced Modeling,Elective
-Visual & Performing Arts,Inventor Certification,Elective
+CTE,Big Data Warehousing & Analytics,2
+CTE,Computer Science & Engineering Home,2
+CTE,Cyber Security,2
+CTE,Digital Electronics (Project Lead the Way),2
+CTE,Digital Systems Design,2
+CTE,Fundamentals of IT Infrastructure,2
+CTE,Green Building Construction,2
+CTE,PLTW EDD,2
+CTE,Statics,2
+CTE,Strength of Materials,2
+CTE,Web Development,2
+English,9th Grade English,2
+English,10th Grade English,2
+English,AP Capstone Seminar,3
+English,11th Grade English,1
+English,AP English Language & Composition,3
+English,AP Capstone Research,3
+English,AP English Literature & Composition,3
+English,Creative Writing,2
+English,Drama,2
+English,Film & Literature,2
+English,Journalism,2
+English,Life,2
+English,Love & Death,2
+English,Mystery,2
+English,Horror & the Supernatural,2
+English,Science Fiction & Fantasy,2
+English,Yearbook,2
+English,The Survey (Tech's Student Newspaper),3
+Health & PE,Health Education,2
+Health & PE,Physical Education,2
+LOTE,Chinese,1
+LOTE,AP Chinese Language and Culture,3
+LOTE,French,1
+LOTE,AP French Language and Culture,3
+LOTE,German,1
+LOTE,AP German Language and Culture,3
+LOTE,Italian,1
+LOTE,AP Italian Language and Culture,3
+LOTE,Spanish,1
+LOTE,Spanish IV - Pre-AP,2
+LOTE,AP Spanish Language and Culture,3
+LOTE,AP Spanish Literature and Culture,3
+Mathematics,Common Core Algebra,1
+Mathematics,Common Core Geometry,1
+Mathematics,Common Core Algebra II,1
+Mathematics,Pre-Calculus,2
+Mathematics,Calculus (non-AP),2
+Mathematics,AP Calculus (AB),3
+Mathematics,AP Calculus (BC),3
+Mathematics,AP Statistics,3
+Mathematics,Multivariable Calculus,2
+Mathematics,Math Research,2
+Mathematics,Linear Algebra,2
+Physics,Regents Physics,1
+Physics,Regents Physics Labs,1
+Physics,AP Physics 1,3
+Physics,AP Physics 2,3
+Physics,AP Physics C (Mechanics),3
+Physics,AP Physics C (E/M),3
+Physics,Astronomy,2
+Physics,Modern Physics,2
+Social Studies,9th Grade Global,2
+Social Studies,10th Grade Regents Global History,1
+Social Studies,AP World History,3
+Social Studies,AP European History,3
+Social Studies,11th Grade Regents American History,1
+Social Studies,AP American History,3
+Social Studies,Participation in Government,2
+Social Studies,AP US Government,3
+Social Studies,Economics,2
+Social Studies,AP Macroeconomics,3
+Social Studies,AP Microeconomics,3
+Social Studies,AP Comparative Government,3
+Social Studies,AP Psychology,3
+Social Studies,AP Human Geography,3
+Social Studies,Sociology,2
+Social Studies,Cultural Anthropology,2
+Social Studies,Physical Anthropology,2
+Visual & Performing Arts,Adobe Digital Video,2
+Visual & Performing Arts,Adobe Visual Design,2
+Visual & Performing Arts,Architectural Drawing w/CAD,2
+Visual & Performing Arts,Digital Animation,2
+Visual & Performing Arts,PLTW CEA,2
+Visual & Performing Arts,PLTW DDP (9th Grade),2
+Visual & Performing Arts,AP Music Theory,3
+Visual & Performing Arts,Basic Strings,2
+Visual & Performing Arts,Beginning Musicianship and Chorus,2
+Visual & Performing Arts,Collaborative Piano/Choral Accompaniment,2
+Visual & Performing Arts,Concert Band,2
+Visual & Performing Arts,Concert Choir,2
+Visual & Performing Arts,Intermediate Orchestra,2
+Visual & Performing Arts,Jazz Band,2
+Visual & Performing Arts,Junior Band,2
+Visual & Performing Arts,Orchestra,2
+Visual & Performing Arts,String Orchestra,2
+Visual & Performing Arts,Symphonic Band,2
+Visual & Performing Arts,Treble Choir,2
+Visual & Performing Arts,Tech Chorale,2
+Visual & Performing Arts,Fundamentals of Product Design,2
+Visual & Performing Arts,Methods of Fabrication,2
+Visual & Performing Arts,Advanced Modeling,2
+Visual & Performing Arts,Inventor Certification,2
