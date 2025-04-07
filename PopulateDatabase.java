@@ -17,6 +17,14 @@ public class Main {
                 "CREATE TABLE Student_Schedules (StudentId integer, Pd1 integer, Pd2 integer, Pd3 integer, Pd4 integer, Pd5 integer, Pd6 integer, Pd7 integer, Pd8 integer, Pd9 integer, Pd10 integer, FOREIGN KEY (StudentId) REFERENCES Student(Id), FOREIGN KEY (Pd1) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd2) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd3) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd4) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd5) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd6) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd7) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd8) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd9) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd10) REFERENCES CourseName(CourseNameId));");
         ArrayList<String> teacherNames = getFileData("src/teachernames.csv");
         ArrayList<String> courseNames = getFileData("src/coursename.csv");
+
+        for (int i = 0; i <= 5000; i++){
+            //System.out.println("INSERT INTO Student_Schedules (" + i + 1 + ", ")
+        }
+        for (int i = 0; i <= 312; i++){
+            //System.out.println("INSERT INTO Teacher_Schedules (" + i + 1 + ", ")
+        }
+
         for (int i = 0; i < courseNames.size(); i++) {
             String[] seperateCourseNames = courseNames.get(i).split(",");
             //System.out.println("INSERT INTO CourseName ( CourseName, CourseNameId ) VALUES ( " + seperateCourseNames[1] + ", " + (i + 1) + " );");
