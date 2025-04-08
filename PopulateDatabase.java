@@ -11,10 +11,11 @@ public class Main {
                 "CREATE TABLE Departments (Id integer PRIMARY KEY, Name varchar(255), NumOfTeachers integer );\n" +
                 "CREATE TABLE CourseType (Id integer PRIMARY KEY, Name varchar(255) );\n" +
                 "CREATE TABLE Room (Id integer PRIMARY KEY, Name varchar(255) );\n" +
-                "CREATE TABLE Courses (CourseNameId integer, CourseId integer PRIMARY KEY, TypeId integer, RoomId integer, TeacherId inteer, FOREIGN KEY (CourseNameId) REFERENCES CourseName(CourseNameId), FOREIGN KEY (TypeId) REFERENCES CourseType(Id), FOREIGN KEY (RoomId) REFERENCES Room(Id), FOREIGN KEY (TeacherId) REFERENCES Teacher(Id) );\n" +
+                "CREATE TABLE Courses (CourseNameId integer, CourseId integer PRIMARY KEY, TypeId integer, RoomId integer, TeacherId integer, FOREIGN KEY (CourseNameId) REFERENCES CourseName(CourseNameId), FOREIGN KEY (TypeId) REFERENCES CourseType(Id), FOREIGN KEY (RoomId) REFERENCES Room(Id), FOREIGN KEY (TeacherId) REFERENCES Teacher(Id) );\n" +
                 "CREATE TABLE Assignments (Name varchar(255), CourseId integer, Grade integer, Type varchar(255), StudentId integer, FOREIGN KEY (CourseId) REFERENCES CourseName(CourseNameId), FOREIGN KEY (StudentId) REFERENCES Student(Id));\n" +
                 "CREATE TABLE Teacher_Schedules (TeacherId integer, Pd1 integer, Pd2 integer, Pd3 integer, Pd4 integer, Pd5 integer, Pd6 integer, Pd7 integer, Pd8 integer, Pd9 integer, Pd10 integer, FOREIGN KEY (TeacherId) REFERENCES Teacher(Id), FOREIGN KEY (Pd1) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd2) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd3) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd4) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd5) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd6) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd7) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd8) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd9) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd10) REFERENCES CourseName(CourseNameId));\n" +
                 "CREATE TABLE Student_Schedules (StudentId integer, Pd1 integer, Pd2 integer, Pd3 integer, Pd4 integer, Pd5 integer, Pd6 integer, Pd7 integer, Pd8 integer, Pd9 integer, Pd10 integer, FOREIGN KEY (StudentId) REFERENCES Student(Id), FOREIGN KEY (Pd1) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd2) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd3) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd4) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd5) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd6) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd7) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd8) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd9) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd10) REFERENCES CourseName(CourseNameId));");
+
         ArrayList<String> teacherNames = getFileData("src/teachernames.csv");
         ArrayList<String> courseNames = getFileData("src/coursename.csv");
         for (int i = 0; i < courseNames.size(); i++) {
@@ -30,7 +31,7 @@ public class Main {
         }
         for (int i = 0; i < teacherNames.size(); i++) {
             String[] seperateNames = teacherNames.get(i).split(" ");
-            System.out.println("INSERT INTO Teacher ( FirstName, LastName, Id, departmentId ) VALUES ( " + seperateNames[0] + ", " + seperateNames[1] + " " + (i + 1) + ", " + seperateNames[2] + " );");
+            //System.out.println("INSERT INTO Teacher ( FirstName, LastName, Id, departmentId ) VALUES ( " + seperateNames[0] + ", " + seperateNames[1] + " " + (i + 1) + ", " + seperateNames[2] + " );");
         }
         for (int i = 1; i <= 5000; i++) {
             //System.out.println("INSERT INTO Student ( Name, Id ) VALUES ( 'Student" + i + "', " + i + ");");
@@ -51,17 +52,40 @@ public class Main {
             }
         }
         for (int i = 0; i < combinations.size(); i++) {
-            //System.out.println("INSERT INTO Room ( Id, Name ) VALUES ( " + (i + 1) + ", '" + combinations.get(i) + "' );");
+            System.out.println("INSERT INTO Room ( Id, Name ) VALUES ( " + (i + 1) + ", '" + combinations.get(i) + "' );");
         }
-        ArrayList<Integer> teacherids = new ArrayList<>();
+        ArrayList<Integer> teacheridsP1 = new ArrayList<>();
+        ArrayList<Integer> teacheridsP2 = new ArrayList<>();
+        ArrayList<Integer> teacheridsP3 = new ArrayList<>();
+        ArrayList<Integer> teacheridsP4 = new ArrayList<>();
+        ArrayList<Integer> teacheridsP5 = new ArrayList<>();
+        ArrayList<Integer> teacheridsP6 = new ArrayList<>();
+        ArrayList<Integer> teacheridsP7 = new ArrayList<>();
+        ArrayList<Integer> teacheridsP8 = new ArrayList<>();
+        ArrayList<Integer> teacheridsP9 = new ArrayList<>();
+        ArrayList<Integer> teacheridsP10 = new ArrayList<>();
+        int count = 0;
         for (int i = 0; i < courseNames.size(); i++) {
-            int randomTeacher = (int) (Math.random() * 312 + 1);
-            while (teacherids.contains(randomTeacher)) {
-                randomTeacher = (int) (Math.random() * 312 + 1);
-            }
-            teacherids.add(randomTeacher);
             String[] seperateCourseNames = courseNames.get(i).split(",");
-            System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, TypeId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + (i + 1) + ", " + seperateCourseNames[2]  + " , , , " + randomTeacher + " )");
+            for (int j = 0; j < 5; j++) {
+                if (teacheridsP1.size() != 312) {
+                    count++;
+                    int randomTeacher = (int) (Math.random() * 312 + 1);
+                    while (teacheridsP1.contains(randomTeacher)) {
+                        randomTeacher = (int) (Math.random() * 312 + 1);
+                    }
+                    teacheridsP1.add(randomTeacher);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, TypeId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + ", " + seperateCourseNames[2]  + " , , , " + randomTeacher + " )");
+                } else if (teacheridsP2.size() != 312) {
+                    count++;
+                    int randomTeacher = (int) (Math.random() * 312 + 1);
+                    while (teacheridsP2.contains(randomTeacher)) {
+                        randomTeacher = (int) (Math.random() * 312 + 1);
+                    }
+                    teacheridsP2.add(randomTeacher);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, TypeId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + ", " + seperateCourseNames[2]  + " , , , " + randomTeacher + " )");
+                }
+            }
         }
     }
     public static ArrayList<String> getFileData(String fileName) {
