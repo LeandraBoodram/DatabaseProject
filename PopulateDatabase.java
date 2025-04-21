@@ -71,7 +71,7 @@ public class PopulateDatabase {
                         randomTeacher = (int) (Math.random() * 312 + 1);
                     }
                     teacheridsP1.add(randomTeacher);
-                    //System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
                 } else if (teacheridsP2.size() != 312) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
@@ -79,7 +79,79 @@ public class PopulateDatabase {
                         randomTeacher = (int) (Math.random() * 312 + 1);
                     }
                     teacheridsP2.add(randomTeacher);
-                    //System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
+                } else if (teacheridsP3.size() != 312) {
+                    count++;
+                    int randomTeacher = (int) (Math.random() * 312 + 1);
+                    while (teacheridsP3.contains(randomTeacher)) {
+                        randomTeacher = (int) (Math.random() * 312 + 1);
+                    }
+                    teacheridsP3.add(randomTeacher);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
+                } else if (teacheridsP4.size() != 312) {
+                    count++;
+                    int randomTeacher = (int) (Math.random() * 312 + 1);
+                    while (teacheridsP4.contains(randomTeacher)) {
+                        randomTeacher = (int) (Math.random() * 312 + 1);
+                    }
+                    teacheridsP4.add(randomTeacher);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
+                } else if (teacheridsP5.size() != 312) {
+                    count++;
+                    int randomTeacher = (int) (Math.random() * 312 + 1);
+                    while (teacheridsP5.contains(randomTeacher)) {
+                        randomTeacher = (int) (Math.random() * 312 + 1);
+                    }
+                    teacheridsP5.add(randomTeacher);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
+                } else if (teacheridsP6.size() != 312) {
+                    count++;
+                    int randomTeacher = (int) (Math.random() * 312 + 1);
+                    while (teacheridsP6.contains(randomTeacher)) {
+                        randomTeacher = (int) (Math.random() * 312 + 1);
+                    }
+                    teacheridsP6.add(randomTeacher);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
+                } else if (teacheridsP7.size() != 312) {
+                    count++;
+                    int randomTeacher = (int) (Math.random() * 312 + 1);
+                    while (teacheridsP7.contains(randomTeacher)) {
+                        randomTeacher = (int) (Math.random() * 312 + 1);
+                    }
+                    teacheridsP7.add(randomTeacher);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
+                } else if (teacheridsP8.size() != 312) {
+                    count++;
+                    int randomTeacher = (int) (Math.random() * 312 + 1);
+                    while (teacheridsP8.contains(randomTeacher)) {
+                        randomTeacher = (int) (Math.random() * 312 + 1);
+                    }
+                    teacheridsP8.add(randomTeacher);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
+                } else if (teacheridsP9.size() != 312) {
+                    count++;
+                    int randomTeacher = (int) (Math.random() * 312 + 1);
+                    while (teacheridsP9.contains(randomTeacher)) {
+                        randomTeacher = (int) (Math.random() * 312 + 1);
+                    }
+                    teacheridsP9.add(randomTeacher);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
+                } else if (teacheridsP10.size() != 312) {
+                    count++;
+                    int randomTeacher = (int) (Math.random() * 312 + 1);
+                    while (teacheridsP10.contains(randomTeacher)) {
+                        randomTeacher = (int) (Math.random() * 312 + 1);
+                    }
+                    teacheridsP10.add(randomTeacher);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
+                } else if (teacheridsP10.size() != 312) {
+                    count++;
+                    int randomTeacher = (int) (Math.random() * 312 + 1);
+                    while (teacheridsP10.contains(randomTeacher)) {
+                        randomTeacher = (int) (Math.random() * 312 + 1);
+                    }
+                    teacheridsP10.add(randomTeacher);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
                 }
             }
         }
