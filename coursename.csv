@@ -1,122 +1,122 @@
-1,Anatomy,2
-1,AP Biology,3
-1,AP Environmental,3
-1,AP Psychology,3
-1,Bioorganic,2
-2,Genetics,2
-2,Introduction to Neuroscience,2
-2,Living Environment,1
-2,Living Environment Lab,1
-2,Environmental Sustainability,2
-2,Regents Chemistry,1
-2,AP Chemistry,3
-2,Chemical Engineering,2
-2,Organic Chemistry,2
-2,MICA,2
-2,Quantitative Analysis,2
-2,Forensics,2
-3,AP Computer Science Principles (10th Grade),3
-3,AP Computer Science A,3
-3,Big Data Warehousing & Analytics,2
-3,Computer Science & Engineering Home,2
-3,Cyber Security,2
-3,Digital Electronics (Project Lead the Way),2
-3,Digital Systems Design,2
-3,Fundamentals of IT Infrastructure,2
-3,Green Building Construction,2
-3,PLTW EDD,2
-3,Statics,2
-3,Strength of Materials,2
-3,Web Development,2
-4,9th Grade English,2
-4,10th Grade English,2
-4,AP Capstone Seminar,3
-4,11th Grade English,1
-4,AP English Language & Composition,3
-4,AP Capstone Research,3
-4,AP English Literature & Composition,3
-4,Creative Writing,2
-4,Drama,2
-4,Film & Literature,2
-4,Journalism,2
-4,Life,2
-4,Love & Death,2
-4,Mystery,2
-4,Horror & the Supernatural,2
-4,Science Fiction & Fantasy,2
-4,Yearbook,2
-4,The Survey (Tech's Student Newspaper),3
-5,Health Education,2
-5,Physical Education,2
-6,Chinese,1
-6,AP Chinese Language and Culture,3
-6,French,1
-6,AP French Language and Culture,3
-6,German,1
-6,AP German Language and Culture,3
-6,Italian,1
-6,AP Italian Language and Culture,3
-6,Spanish,1
-6,Spanish IV - Pre-AP,2
-6,AP Spanish Language and Culture,3
-6,AP Spanish Literature and Culture,3
-7,Common Core Algebra,1
-7,Common Core Geometry,1
-7,Common Core Algebra II,1
-7,Pre-Calculus,2
-7,Calculus (non-AP),2
-7,AP Calculus (AB),3
-7,AP Calculus (BC),3
-7,AP Statistics,3
-7,Multivariable Calculus,2
-7,Math Research,2
-7,Linear Algebra,2
-8,Regents Physics,1
-8,Regents Physics Labs,1
-8,AP Physics 1,3
-8,AP Physics 2,3
-8,AP Physics C (Mechanics),3
-8,AP Physics C (E/M),3
-8,Astronomy,2
-8,Modern Physics,2
-9,9th Grade Global,2
-9,10th Grade Regents Global History,1
-9,AP World History,3
-9,AP European History,3
-9,11th Grade Regents American History,1
-9,AP American History,3
-9,Participation in Government,2
-9,AP US Government,3
-9,Economics,2
-9,AP Macroeconomics,3
-9,AP Microeconomics,3
-9,AP Comparative Government,3
-9,AP Psychology,3
-9,AP Human Geography,3
-9,Sociology,2
-9,Cultural Anthropology,2
-9,Physical Anthropology,2
-10,Adobe Digital Video,2
-10,Adobe Visual Design,2
-10,Architectural Drawing w/CAD,2
-10,Digital Animation,2
-10,PLTW CEA,2
-10,PLTW DDP (9th Grade),2
-10,AP Music Theory,3
-10,Basic Strings,2
-10,Beginning Musicianship and Chorus,2
-10,Collaborative Piano/Choral Accompaniment,2
-10,Concert Band,2
-10,Concert Choir,2
-10,Intermediate Orchestra,2
-10,Jazz Band,2
-10,Junior Band,2
-10,Orchestra,2
-10,String Orchestra,2
-10,Symphonic Band,2
-10,Treble Choir,2
-10,Tech Chorale,2
-10,Fundamentals of Product Design,2
-10,Methods of Fabrication,2
-10,Advanced Modeling,2
-10,Inventor Certification,2
+1,Anatomy,Elective
+1,AP Biology,AP
+1,AP Environmental,AP
+1,AP Psychology,AP
+1,Bioorganic,Elective
+2,Genetics,Elective
+2,Introduction to Neuroscience,Elective
+2,Living Environment,Regents
+2,Living Environment Lab,Regents
+2,Environmental Sustainability,Elective
+2,Regents Chemistry,Regents
+2,AP Chemistry,AP
+2,Chemical Engineering,Elective
+2,Organic Chemistry,Elective
+2,MICA,Elective
+2,Quantitative Analysis,Elective
+2,Forensics,Elective
+3,AP Computer Science Principles (10th Grade),AP
+3,AP Computer Science A,AP
+3,Big Data Warehousing & Analytics,Elective
+3,Computer Science & Engineering Home,Elective
+3,Cyber Security,Elective
+3,Digital Electronics (Project Lead the Way),Elective
+3,Digital Systems Design,Elective
+3,Fundamentals of IT Infrastructure,Elective
+3,Green Building Construction,Elective
+3,PLTW EDD,Elective
+3,Statics,Elective
+3,Strength of Materials,Elective
+3,Web Development,Elective
+4,9th Grade English,Elective
+4,Regents0th Grade English,Elective
+4,AP Capstone Seminar,AP
+4,Regents1th Grade English,Regents
+4,AP English Language & Composition,AP
+4,AP Capstone Research,AP
+4,AP English Literature & Composition,AP
+4,Creative Writing,Elective
+4,Drama,Elective
+4,Film & Literature,Elective
+4,Journalism,Elective
+4,Life,Elective
+4,Love & Death,Elective
+4,Mystery,Elective
+4,Horror & the Supernatural,Elective
+4,Science Fiction & Fantasy,Elective
+4,Yearbook,Elective
+4,The Survey (Tech's Student Newspaper),AP
+5,Health Education,Elective
+5,Physical Education,Elective
+6,Chinese,Regents
+6,AP Chinese Language and Culture,AP
+6,French,Regents
+6,AP French Language and Culture,AP
+6,German,Regents
+6,AP German Language and Culture,AP
+6,Italian,Regents
+6,AP Italian Language and Culture,AP
+6,Spanish,Regents
+6,Spanish IV - Pre-AP,Elective
+6,AP Spanish Language and Culture,AP
+6,AP Spanish Literature and Culture,AP
+7,Common Core Algebra,Regents
+7,Common Core Geometry,Regents
+7,Common Core Algebra II,Regents
+7,Pre-Calculus,Elective
+7,Calculus (non-AP),Elective
+7,AP Calculus (AB),AP
+7,AP Calculus (BC),AP
+7,AP Statistics,AP
+7,Multivariable Calculus,Elective
+7,Math Research,Elective
+7,Linear Algebra,Elective
+8,Regents Physics,Regents
+8,Regents Physics Labs,Regents
+8,AP Physics 1,AP
+8,AP Physics 2,AP
+8,AP Physics C (Mechanics),AP
+8,AP Physics C (E/M),AP
+8,Astronomy,Elective
+8,Modern Physics,Elective
+9,9th Grade Global,Elective
+9,Regents0th Grade Regents Global History,Regents
+9,AP World History,AP
+9,AP European History,AP
+9,Regents1th Grade Regents American History,Regents
+9,AP American History,AP
+9,Participation in Government,Elective
+9,AP US Government,AP
+9,Economics,Elective
+9,AP Macroeconomics,AP
+9,AP Microeconomics,AP
+9,AP Comparative Government,AP
+9,AP Psychology,AP
+9,AP Human Geography,AP
+9,Sociology,Elective
+9,Cultural Anthropology,Elective
+9,Physical Anthropology,Elective
+10,Adobe Digital Video,Elective
+10,Adobe Visual Design,Elective
+10,Architectural Drawing w/CAD,Elective
+10,Digital Animation,Elective
+10,PLTW CEA,Elective
+10,PLTW DDP (9th Grade),Elective
+10,AP Music Theory,AP
+10,Basic Strings,Elective
+10,Beginning Musicianship and Chorus,Elective
+10,Collaborative Piano/Choral Accompaniment,Elective
+10,Concert Band,Elective
+10,Concert Choir,Elective
+10,Intermediate Orchestra,Elective
+10,Jazz Band,Elective
+10,Junior Band,Elective
+10,Orchestra,Elective
+10,String Orchestra,Elective
+10,Symphonic Band,Elective
+10,Treble Choir,Elective
+10,Tech Chorale,Elective
+10,Fundamentals of Product Design,Elective
+10,Methods of Fabrication,Elective
+10,Advanced Modeling,Elective
+10,Inventor Certification,Elective
