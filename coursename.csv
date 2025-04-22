@@ -1,122 +1,122 @@
-1,Anatomy,Elective
-1,AP Biology,AP
-1,AP Environmental,AP
-1,AP Psychology,AP
-1,Bioorganic,Elective
-2,Genetics,Elective
-2,Introduction to Neuroscience,Elective
-2,Living Environment,Regents
-2,Living Environment Lab,Regents
-2,Environmental Sustainability,Elective
-2,Regents Chemistry,Regents
-2,AP Chemistry,AP
-2,Chemical Engineering,Elective
-2,Organic Chemistry,Elective
-2,MICA,Elective
-2,Quantitative Analysis,Elective
-2,Forensics,Elective
-3,AP Computer Science Principles (10th Grade),AP
-3,AP Computer Science A,AP
-3,Big Data Warehousing & Analytics,Elective
-3,Computer Science & Engineering Home,Elective
-3,Cyber Security,Elective
-3,Digital Electronics (Project Lead the Way),Elective
-3,Digital Systems Design,Elective
-3,Fundamentals of IT Infrastructure,Elective
-3,Green Building Construction,Elective
-3,PLTW EDD,Elective
-3,Statics,Elective
-3,Strength of Materials,Elective
-3,Web Development,Elective
-4,9th Grade English,Elective
-4,Regents0th Grade English,Elective
-4,AP Capstone Seminar,AP
-4,Regents1th Grade English,Regents
-4,AP English Language & Composition,AP
-4,AP Capstone Research,AP
-4,AP English Literature & Composition,AP
-4,Creative Writing,Elective
-4,Drama,Elective
-4,Film & Literature,Elective
-4,Journalism,Elective
-4,Life,Elective
-4,Love & Death,Elective
-4,Mystery,Elective
-4,Horror & the Supernatural,Elective
-4,Science Fiction & Fantasy,Elective
-4,Yearbook,Elective
-4,The Survey (Tech's Student Newspaper),AP
-5,Health Education,Elective
-5,Physical Education,Elective
-6,Chinese,Regents
-6,AP Chinese Language and Culture,AP
-6,French,Regents
-6,AP French Language and Culture,AP
-6,German,Regents
-6,AP German Language and Culture,AP
-6,Italian,Regents
-6,AP Italian Language and Culture,AP
-6,Spanish,Regents
-6,Spanish IV - Pre-AP,Elective
-6,AP Spanish Language and Culture,AP
-6,AP Spanish Literature and Culture,AP
-7,Common Core Algebra,Regents
-7,Common Core Geometry,Regents
-7,Common Core Algebra II,Regents
-7,Pre-Calculus,Elective
-7,Calculus (non-AP),Elective
-7,AP Calculus (AB),AP
-7,AP Calculus (BC),AP
-7,AP Statistics,AP
-7,Multivariable Calculus,Elective
-7,Math Research,Elective
-7,Linear Algebra,Elective
-8,Regents Physics,Regents
-8,Regents Physics Labs,Regents
-8,AP Physics 1,AP
-8,AP Physics 2,AP
-8,AP Physics C (Mechanics),AP
-8,AP Physics C (E/M),AP
-8,Astronomy,Elective
-8,Modern Physics,Elective
-9,9th Grade Global,Elective
-9,Regents0th Grade Regents Global History,Regents
-9,AP World History,AP
-9,AP European History,AP
-9,Regents1th Grade Regents American History,Regents
-9,AP American History,AP
-9,Participation in Government,Elective
-9,AP US Government,AP
-9,Economics,Elective
-9,AP Macroeconomics,AP
-9,AP Microeconomics,AP
-9,AP Comparative Government,AP
-9,AP Psychology,AP
-9,AP Human Geography,AP
-9,Sociology,Elective
-9,Cultural Anthropology,Elective
-9,Physical Anthropology,Elective
-10,Adobe Digital Video,Elective
-10,Adobe Visual Design,Elective
-10,Architectural Drawing w/CAD,Elective
-10,Digital Animation,Elective
-10,PLTW CEA,Elective
-10,PLTW DDP (9th Grade),Elective
-10,AP Music Theory,AP
-10,Basic Strings,Elective
-10,Beginning Musicianship and Chorus,Elective
-10,Collaborative Piano/Choral Accompaniment,Elective
-10,Concert Band,Elective
-10,Concert Choir,Elective
-10,Intermediate Orchestra,Elective
-10,Jazz Band,Elective
-10,Junior Band,Elective
-10,Orchestra,Elective
-10,String Orchestra,Elective
-10,Symphonic Band,Elective
-10,Treble Choir,Elective
-10,Tech Chorale,Elective
-10,Fundamentals of Product Design,Elective
-10,Methods of Fabrication,Elective
-10,Advanced Modeling,Elective
-10,Inventor Certification,Elective
+1,Anatomy,Elective,1 
+1,AP Biology,AP,2
+1,AP Environmental,AP,3 
+1,AP Psychology,AP,4
+1,Bioorganic,Elective,5
+2,Genetics,Elective,6
+2,Introduction to Neuroscience,Elective,7
+2,Living Environment,Regents,8
+2,Living Environment Lab,Regents,9
+2,Environmental Sustainability,Elective,10
+2,Regents Chemistry,Regents,11
+2,AP Chemistry,AP,12
+2,Chemical Engineering,Elective,13
+2,Organic Chemistry,Elective,14
+2,MICA,Elective,15
+2,Quantitative Analysis,Elective,16
+2,Forensics,Elective,17
+3,AP Computer Science Principles (10th Grade),AP,18
+3,AP Computer Science A,AP,19
+3,Big Data Warehousing & Analytics,Elective,20
+3,Computer Science & Engineering Home,Elective,21
+3,Cyber Security,Elective,22
+3,Digital Electronics (Project Lead the Way),Elective,23
+3,Digital Systems Design,Elective,24
+3,Fundamentals of IT Infrastructure,Elective,25
+3,Green Building Construction,Elective,26
+3,PLTW EDD,Elective,27
+3,Statics,Elective,28
+3,Strength of Materials,Elective,29
+3,Web Development,Elective,30
+4,9th Grade English,Elective,31
+4,Regents0th Grade English,Elective,32
+4,AP Capstone Seminar,AP,33
+4,Regents1th Grade English,Regents,34
+4,AP English Language & Composition,AP,35
+4,AP Capstone Research,AP,36
+4,AP English Literature & Composition,AP,37
+4,Creative Writing,Elective,38
+4,Drama,Elective,39
+4,Film & Literature,Elective,40
+4,Journalism,Elective,41
+4,Life,Elective,42
+4,Love & Death,Elective,43
+4,Mystery,Elective,44
+4,Horror & the Supernatural,Elective,45
+4,Science Fiction & Fantasy,Elective,46
+4,Yearbook,Elective,47
+4,The Survey (Tech's Student Newspaper),AP,48
+5,Health Education,Elective,49
+5,Physical Education,Elective,50
+6,Chinese,Regents,51
+6,AP Chinese Language and Culture,AP,52
+6,French,Regents,53
+6,AP French Language and Culture,AP,54
+6,German,Regents,55
+6,AP German Language and Culture,AP,56
+6,Italian,Regents,57
+6,AP Italian Language and Culture,AP,58
+6,Spanish,Regents,59
+6,Spanish IV - Pre-AP,Elective,60
+6,AP Spanish Language and Culture,AP,61
+6,AP Spanish Literature and Culture,AP,62
+7,Common Core Algebra,Regents,63
+7,Common Core Geometry,Regents,64
+7,Common Core Algebra II,Regents,65
+7,Pre-Calculus,Elective,66
+7,Calculus (non-AP),Elective,67
+7,AP Calculus (AB),AP,68
+7,AP Calculus (BC),AP,69
+7,AP Statistics,AP,70
+7,Multivariable Calculus,Elective,71
+7,Math Research,Elective,72
+7,Linear Algebra,Elective,73
+8,Regents Physics,Regents,74
+8,Regents Physics Labs,Regents,75
+8,AP Physics 1,AP,76
+8,AP Physics 2,AP,77
+8,AP Physics C (Mechanics),AP,78
+8,AP Physics C (E/M),AP,79
+8,Astronomy,Elective,80
+8,Modern Physics,Elective,81
+9,9th Grade Global,Elective,82
+9,Regents0th Grade Regents Global History,Regents,83
+9,AP World History,AP,84
+9,AP European History,AP,85
+9,Regents1th Grade Regents American History,Regents,86
+9,AP American History,AP,87
+9,Participation in Government,Elective,88
+9,AP US Government,AP,89
+9,Economics,Elective,90
+9,AP Macroeconomics,AP,91
+9,AP Microeconomics,AP,92
+9,AP Comparative Government,AP,93
+9,AP Psychology,AP,94
+9,AP Human Geography,AP,95
+9,Sociology,Elective,96
+9,Cultural Anthropology,Elective,97
+9,Physical Anthropology,Elective,98
+10,Adobe Digital Video,Elective,99
+10,Adobe Visual Design,Elective,100
+10,Architectural Drawing w/CAD,Elective,101
+10,Digital Animation,Elective,102
+10,PLTW CEA,Elective,103
+10,PLTW DDP (9th Grade),Elective,104
+10,AP Music Theory,AP,105
+10,Basic Strings,Elective,106
+10,Beginning Musicianship and Chorus,Elective,107
+10,Collaborative Piano/Choral Accompaniment,Elective,108
+10,Concert Band,Elective,109
+10,Concert Choir,Elective,110
+10,Intermediate Orchestra,Elective,111
+10,Jazz Band,Elective,112
+10,Junior Band,Elective,113
+10,Orchestra,Elective,114
+10,String Orchestra,Elective,115
+10,Symphonic Band,Elective,116
+10,Treble Choir,Elective,117
+10,Tech Chorale,Elective,118
+10,Fundamentals of Product Design,Elective,119
+10,Methods of Fabrication,Elective,120
+10,Advanced Modeling,Elective,121
+10,Inventor Certification,Elective,122
