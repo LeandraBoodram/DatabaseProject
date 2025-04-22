@@ -76,7 +76,7 @@ public class PopulateDatabase {
         for (int i = 0; i < courseNames.size(); i++) {
             String[] seperateCourseNames = courseNames.get(i).split(",");
             for (int j = 0; j < 5; j++) {
-                if (teacheridsP1.size() != 312) {
+                if (teacheridsP1.size() != 312  && roomsP1.size() != 756) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
                     int randomRoom = (int) (Math.random() * 756 + 1);
@@ -87,7 +87,7 @@ public class PopulateDatabase {
                     teacheridsP1.add(randomTeacher);
                     roomsP1.add(randomRoom);
                     System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
-                } else if (teacheridsP2.size() != 312) {
+                } else if (teacheridsP2.size() != 312  && roomsP2.size() != 756) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
                     int randomRoom = (int) (Math.random() * 756 + 1);
@@ -98,7 +98,7 @@ public class PopulateDatabase {
                     teacheridsP2.add(randomTeacher);
                     roomsP2.add(randomRoom);
                     System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
-                } else if (teacheridsP3.size() != 312) {
+                } else if (teacheridsP3.size() != 312  && roomsP3.size() != 756) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
                     int randomRoom = (int) (Math.random() * 756 + 1);
@@ -109,7 +109,7 @@ public class PopulateDatabase {
                     teacheridsP3.add(randomTeacher);
                     roomsP3.add(randomRoom);
                     System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
-                } else if (teacheridsP4.size() != 312) {
+                } else if (teacheridsP4.size() != 312  && roomsP4.size() != 756) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
                     int randomRoom = (int) (Math.random() * 756 + 1);
