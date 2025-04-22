@@ -21,7 +21,7 @@ public class PopulateDatabase {
             String[] seperateCourseNames = courseNames.get(i).split(",");
             System.out.println("INSERT INTO CourseName ( CourseName, CourseNameId, CourseType ) VALUES ( " + seperateCourseNames[1] + ", " + (i + 1) + ", " + seperateCourseNames[2] + ");");
         }
-        String[] departments = {"Biology", "Chemistry", "CTE", "English", "ealth & PE", "LOTE", "Mathematics", "Physics","Social Studies", "Visual & Performing Arts"};
+        String[] departments = {"Biology", "Chemistry", "CTE", "English", "Health & PE", "LOTE", "Mathematics", "Physics","Social Studies", "Visual & Performing Arts"};
         for (int i = 1; i <= departments.length; i++) {
             //System.out.println("INSERT INTO Departments ( Id, Name ) VALUES ( " + i + ", '" + departments[i - 1] + "');");
         }
@@ -47,8 +47,10 @@ public class PopulateDatabase {
                 }
             }
         }
+        int count3 = 0;
         for (int i = 0; i < combinations.size(); i++) {
-            //System.out.println("INSERT INTO Room ( Id, Name ) VALUES ( " + (i + 1) + ", '" + combinations.get(i) + "' );");
+            System.out.println("INSERT INTO Room ( Id, Name ) VALUES ( " + (i + 1) + ", '" + combinations.get(i) + "' );");
+            count3++;
         }
         ArrayList<Integer> teacheridsP1 = new ArrayList<>();
         ArrayList<Integer> teacheridsP2 = new ArrayList<>();
@@ -60,98 +62,130 @@ public class PopulateDatabase {
         ArrayList<Integer> teacheridsP8 = new ArrayList<>();
         ArrayList<Integer> teacheridsP9 = new ArrayList<>();
         ArrayList<Integer> teacheridsP10 = new ArrayList<>();
+        ArrayList<Integer> roomsP1 = new ArrayList<>();
+        ArrayList<Integer> roomsP2 = new ArrayList<>();
+        ArrayList<Integer> roomsP3 = new ArrayList<>();
+        ArrayList<Integer> roomsP4 = new ArrayList<>();
+        ArrayList<Integer> roomsP5 = new ArrayList<>();
+        ArrayList<Integer> roomsP6 = new ArrayList<>();
+        ArrayList<Integer> roomsP7 = new ArrayList<>();
+        ArrayList<Integer> roomsP8 = new ArrayList<>();
+        ArrayList<Integer> roomsP9 = new ArrayList<>();
+        ArrayList<Integer> roomsP10 = new ArrayList<>();
         int count = 0;
         for (int i = 0; i < courseNames.size(); i++) {
             String[] seperateCourseNames = courseNames.get(i).split(",");
             for (int j = 0; j < 5; j++) {
-                if (teacheridsP1.size() != 312) {
+                if (teacheridsP1.size() != 312 && roomsP1.size() != 756) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
-                    while (teacheridsP1.contains(randomTeacher)) {
+                    int randomRoom = (int) (Math.random() * 756 + 1);
+                    while (teacheridsP1.contains(randomTeacher) || roomsP1.contains(randomRoom)) {
                         randomTeacher = (int) (Math.random() * 312 + 1);
+                        randomRoom = (int) (Math.random() * 756 + 1);
                     }
                     teacheridsP1.add(randomTeacher);
-                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
-                } else if (teacheridsP2.size() != 312) {
+                    roomsP1.add(randomRoom);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
+                } else if (teacheridsP2.size() != 312 && roomsP2.size() != 756) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
-                    while (teacheridsP2.contains(randomTeacher)) {
+                    int randomRoom = (int) (Math.random() * 756 + 1);
+                    while (teacheridsP2.contains(randomTeacher) || roomsP2.contains(randomRoom)) {
                         randomTeacher = (int) (Math.random() * 312 + 1);
+                        randomRoom = (int) (Math.random() * 756 + 1);
                     }
                     teacheridsP2.add(randomTeacher);
-                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
-                } else if (teacheridsP3.size() != 312) {
+                    roomsP2.add(randomRoom);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
+                } else if (teacheridsP3.size() != 312 && roomsP3.size() != 756) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
-                    while (teacheridsP3.contains(randomTeacher)) {
+                    int randomRoom = (int) (Math.random() * 756 + 1);
+                    while (teacheridsP3.contains(randomTeacher) || roomsP3.contains(randomRoom)) {
                         randomTeacher = (int) (Math.random() * 312 + 1);
+                        randomRoom = (int) (Math.random() * 756 + 1);
                     }
                     teacheridsP3.add(randomTeacher);
-                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
-                } else if (teacheridsP4.size() != 312) {
+                    roomsP3.add(randomRoom);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
+                } else if (teacheridsP4.size() != 312 && roomsP4.size() != 756) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
-                    while (teacheridsP4.contains(randomTeacher)) {
+                    int randomRoom = (int) (Math.random() * 756 + 1);
+                    while (teacheridsP4.contains(randomTeacher) || roomsP4.contains(randomRoom)) {
                         randomTeacher = (int) (Math.random() * 312 + 1);
+                        randomRoom = (int) (Math.random() * 756 + 1);
                     }
                     teacheridsP4.add(randomTeacher);
-                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
-                } else if (teacheridsP5.size() != 312) {
+                    roomsP4.add(randomRoom);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
+                } else if (teacheridsP5.size() != 312 && roomsP5.size() != 756) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
-                    while (teacheridsP5.contains(randomTeacher)) {
+                    int randomRoom = (int) (Math.random() * 756 + 1);
+                    while (teacheridsP5.contains(randomTeacher) || roomsP5.contains(randomRoom)) {
                         randomTeacher = (int) (Math.random() * 312 + 1);
+                        randomRoom = (int) (Math.random() * 756 + 1);
                     }
                     teacheridsP5.add(randomTeacher);
-                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
-                } else if (teacheridsP6.size() != 312) {
+                    roomsP5.add(randomRoom);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
+                } else if (teacheridsP6.size() != 312 && roomsP6.size() != 756) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
-                    while (teacheridsP6.contains(randomTeacher)) {
+                    int randomRoom = (int) (Math.random() * 756 + 1);
+                    while (teacheridsP6.contains(randomTeacher) || roomsP6.contains(randomRoom)) {
                         randomTeacher = (int) (Math.random() * 312 + 1);
+                        randomRoom = (int) (Math.random() * 756 + 1);
                     }
                     teacheridsP6.add(randomTeacher);
-                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
-                } else if (teacheridsP7.size() != 312) {
+                    roomsP6.add(randomRoom);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
+                } else if (teacheridsP7.size() != 312 && roomsP7.size() != 756) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
-                    while (teacheridsP7.contains(randomTeacher)) {
+                    int randomRoom = (int) (Math.random() * 756 + 1);
+                    while (teacheridsP7.contains(randomTeacher) || roomsP7.contains(randomRoom)) {
                         randomTeacher = (int) (Math.random() * 312 + 1);
+                        randomRoom = (int) (Math.random() * 756 + 1);
                     }
                     teacheridsP7.add(randomTeacher);
-                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
-                } else if (teacheridsP8.size() != 312) {
+                    roomsP7.add(randomRoom);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
+                } else if (teacheridsP8.size() != 312 && roomsP8.size() != 756) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
-                    while (teacheridsP8.contains(randomTeacher)) {
+                    int randomRoom = (int) (Math.random() * 756 + 1);
+                    while (teacheridsP8.contains(randomTeacher) || roomsP8.contains(randomRoom)) {
                         randomTeacher = (int) (Math.random() * 312 + 1);
+                        randomRoom = (int) (Math.random() * 756 + 1);
                     }
                     teacheridsP8.add(randomTeacher);
-                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
-                } else if (teacheridsP9.size() != 312) {
+                    roomsP8.add(randomRoom);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
+                } else if (teacheridsP9.size() != 312 && roomsP9.size() != 756) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
-                    while (teacheridsP9.contains(randomTeacher)) {
+                    int randomRoom = (int) (Math.random() * 756 + 1);
+                    while (teacheridsP9.contains(randomTeacher) || roomsP9.contains(randomRoom)) {
                         randomTeacher = (int) (Math.random() * 312 + 1);
+                        randomRoom = (int) (Math.random() * 756 + 1);
                     }
                     teacheridsP9.add(randomTeacher);
-                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
-                } else if (teacheridsP10.size() != 312) {
+                    roomsP9.add(randomRoom);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
+                } else if (teacheridsP10.size() != 312 && roomsP10.size() != 756) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
-                    while (teacheridsP10.contains(randomTeacher)) {
+                    int randomRoom = (int) (Math.random() * 756 + 1);
+                    while (teacheridsP10.contains(randomTeacher) || roomsP10.contains(randomRoom)) {
                         randomTeacher = (int) (Math.random() * 312 + 1);
+                        randomRoom = (int) (Math.random() * 756 + 1);
                     }
                     teacheridsP10.add(randomTeacher);
-                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
-                } else if (teacheridsP10.size() != 312) {
-                    count++;
-                    int randomTeacher = (int) (Math.random() * 312 + 1);
-                    while (teacheridsP10.contains(randomTeacher)) {
-                        randomTeacher = (int) (Math.random() * 312 + 1);
-                    }
-                    teacheridsP10.add(randomTeacher);
-                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[1] + ", " + count + " , , , " + randomTeacher + " )");
+                    roomsP10.add(randomRoom);
+                    System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
                 }
             }
         }
