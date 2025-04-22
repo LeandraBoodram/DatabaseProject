@@ -21,7 +21,7 @@ public class PopulateDatabase {
             String[] seperateCourseNames = courseNames.get(i).split(",");
             System.out.println("INSERT INTO CourseName ( CourseName, CourseNameId, CourseType ) VALUES ( " + seperateCourseNames[1] + ", " + (i + 1) + ", " + seperateCourseNames[2] + ");");
         }
-        String[] departments = {"Biology", "Chemistry", "CTE", "English", "Health & PE", "LOTE", "Mathematics", "Physics","Social Studies", "Visual & Performing Arts"};
+        String[] departments = {"Biology", "Chemistry", "CTE", "English", "Health & PE", "LOTE", "Mathematics", "Physics", "Social Studies", "Visual & Performing Arts"};
         for (int i = 1; i <= departments.length; i++) {
             //System.out.println("INSERT INTO Departments ( Id, Name ) VALUES ( " + i + ", '" + departments[i - 1] + "');");
         }
@@ -76,7 +76,7 @@ public class PopulateDatabase {
         for (int i = 0; i < courseNames.size(); i++) {
             String[] seperateCourseNames = courseNames.get(i).split(",");
             for (int j = 0; j < 5; j++) {
-                if (teacheridsP1.size() != 312 && roomsP1.size() != 756) {
+                if (teacheridsP1.size() != 312) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
                     int randomRoom = (int) (Math.random() * 756 + 1);
@@ -87,7 +87,7 @@ public class PopulateDatabase {
                     teacheridsP1.add(randomTeacher);
                     roomsP1.add(randomRoom);
                     System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
-                } else if (teacheridsP2.size() != 312 && roomsP2.size() != 756) {
+                } else if (teacheridsP2.size() != 312) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
                     int randomRoom = (int) (Math.random() * 756 + 1);
@@ -98,7 +98,7 @@ public class PopulateDatabase {
                     teacheridsP2.add(randomTeacher);
                     roomsP2.add(randomRoom);
                     System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
-                } else if (teacheridsP3.size() != 312 && roomsP3.size() != 756) {
+                } else if (teacheridsP3.size() != 312) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
                     int randomRoom = (int) (Math.random() * 756 + 1);
@@ -109,7 +109,7 @@ public class PopulateDatabase {
                     teacheridsP3.add(randomTeacher);
                     roomsP3.add(randomRoom);
                     System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
-                } else if (teacheridsP4.size() != 312 && roomsP4.size() != 756) {
+                } else if (teacheridsP4.size() != 312) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
                     int randomRoom = (int) (Math.random() * 756 + 1);
@@ -188,6 +188,21 @@ public class PopulateDatabase {
                     System.out.println("INSERT INTO Courses ( CourseNameId, CourseId, RoomId, TeacherId ) VALUES ( " + seperateCourseNames[3] + ", " + count + ", " + randomRoom + ", " + randomTeacher + " )");
                 }
             }
+        }
+
+        for (int j = 0; j < 312; j++) {
+            System.out.println("Teacher Id: " + j);
+            for (int i = 0; i < teacheridsP1.size(); i++) {
+                if (teacheridsP1.get(i) == j) {
+                    System.out.println("CourseId P1: " + (i + 1));
+                }
+            }
+            for (int i = 0; i < teacheridsP2.size(); i++) {
+                if (teacheridsP2.get(i) == j) {
+                    System.out.println("CourseId P2: " + (i + 313));
+                }
+            }
+            
         }
     }
     public static ArrayList<String> getFileData(String fileName) {
