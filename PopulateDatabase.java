@@ -47,10 +47,8 @@ public class PopulateDatabase {
                 }
             }
         }
-        int count3 = 0;
         for (int i = 0; i < combinations.size(); i++) {
             System.out.println("INSERT INTO Room ( Id, Name ) VALUES ( " + (i + 1) + ", '" + combinations.get(i) + "' );");
-            count3++;
         }
         ArrayList<Integer> teacheridsP1 = new ArrayList<>();
         ArrayList<Integer> teacheridsP2 = new ArrayList<>();
@@ -75,7 +73,7 @@ public class PopulateDatabase {
         int count = 0;
         for (int i = 0; i < courseNames.size(); i++) {
             String[] seperateCourseNames = courseNames.get(i).split(",");
-            for (int j = 0; j < 5; j++) {
+            for (int j = 0; j < 30; j++) {
                 if (teacheridsP1.size() != 312  && roomsP1.size() != 756) {
                     count++;
                     int randomTeacher = (int) (Math.random() * 312 + 1);
@@ -189,20 +187,50 @@ public class PopulateDatabase {
                 }
             }
         }
-
-        for (int j = 0; j < 312; j++) {
-            System.out.println("Teacher Id: " + j);
+        int teacherP1 = 0;
+        int teacherP2 = 0;
+        int teacherP3 = 0;
+        int teacherP4 = 0;
+        int teacherP5 = 0;
+        int teacherP6 = 0;
+        int teacherP7 = 0;
+        int teacherP8 = 0;
+        int teacherP9 = 0;
+        int teacherP10 = 0;
+        for (int j = 1; j <= 312; j++) {
             for (int i = 0; i < teacheridsP1.size(); i++) {
                 if (teacheridsP1.get(i) == j) {
-                    System.out.println("CourseId P1: " + (i + 1));
+                    teacherP1 = i + 1;
                 }
-            }
-            for (int i = 0; i < teacheridsP2.size(); i++) {
                 if (teacheridsP2.get(i) == j) {
-                    System.out.println("CourseId P2: " + (i + 313));
+                    teacherP2 = i + 313;
+                }
+                if (teacheridsP3.get(i) == j) {
+                    teacherP3 = i + 626;
+                }
+                if (teacheridsP4.get(i) == j) {
+                    teacherP4 = i + 313 * 3;
+                }
+                if (teacheridsP5.get(i) == j) {
+                    teacherP5 = i + 313 * 4;
+                }
+                if (teacheridsP6.get(i) == j) {
+                    teacherP6 = i + 313 * 5;
+                }
+                if (teacheridsP7.get(i) == j) {
+                    teacherP7 = i + 313 * 6;
+                }
+                if (teacheridsP8.get(i) == j) {
+                    teacherP8 = i + 313 * 7;
+                }
+                if (teacheridsP9.get(i) == j) {
+                    teacherP9 = i + 313 * 8;
+                }
+                if (teacheridsP10.get(i) == j) {
+                    teacherP10 = i + 313 * 9;
                 }
             }
-            
+            System.out.println("INSERT INTO Teacher_Schedules ( TeacherId, Pd1, Pd2, Pd3, Pd4, Pd5, Pd6, Pd7, Pd8, Pd9, Pd10 ) VALUES ( " + j + ", " + teacherP1 + ", " + teacherP2 + ", " + teacherP3 + ", " + teacherP4 + ", " + teacherP5 + ", " + teacherP6 + ", " + teacherP7 + ", " + teacherP8 + ", " + teacherP9 + ", " + teacherP10 + " );");
         }
     }
     public static ArrayList<String> getFileData(String fileName) {
