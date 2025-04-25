@@ -6,17 +6,17 @@ import java.util.Scanner;
 public class PopulateDatabase {
     public static void main(String[] args) {
         System.out.println("CREATE TABLE Student (Name varchar(255), Id integer PRIMARY KEY );\n" +
+                "CREATE TABLE Departments (Id integer PRIMARY KEY, Name varchar(255), NumOfTeachers integer );\n" +
                 "CREATE TABLE Teacher (FirstName varchar(255), LastName varchar(255), Id integer PRIMARY KEY, departmentId integer, FOREIGN KEY (departmentId) REFERENCES Departments(Id));\n" +
                 "CREATE TABLE CourseName (CourseName varchar(255), CourseNameId integer PRIMARY KEY, CourseType varchar(255) );\n" +
-                "CREATE TABLE Departments (Id integer PRIMARY KEY, Name varchar(255), NumOfTeachers integer );\n" +
                 "CREATE TABLE Room (Id integer PRIMARY KEY, Name varchar(255) );\n" +
                 "CREATE TABLE Courses (CourseNameId integer, CourseId integer PRIMARY KEY, RoomId integer, TeacherId integer, FOREIGN KEY (CourseNameId) REFERENCES CourseName(CourseNameId), FOREIGN KEY (RoomId) REFERENCES Room(Id), FOREIGN KEY (TeacherId) REFERENCES Teacher(Id) );\n" +
                 "CREATE TABLE Assignments (Name varchar(255), CourseId integer, Grade integer, Type varchar(255), StudentId integer, FOREIGN KEY (CourseId) REFERENCES CourseName(CourseNameId), FOREIGN KEY (StudentId) REFERENCES Student(Id));\n" +
                 "CREATE TABLE Teacher_Schedules (TeacherId integer, Pd1 integer, Pd2 integer, Pd3 integer, Pd4 integer, Pd5 integer, Pd6 integer, Pd7 integer, Pd8 integer, Pd9 integer, Pd10 integer, FOREIGN KEY (TeacherId) REFERENCES Teacher(Id), FOREIGN KEY (Pd1) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd2) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd3) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd4) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd5) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd6) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd7) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd8) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd9) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd10) REFERENCES CourseName(CourseNameId));\n" +
                 "CREATE TABLE Student_Schedules (StudentId integer, Pd1 integer, Pd2 integer, Pd3 integer, Pd4 integer, Pd5 integer, Pd6 integer, Pd7 integer, Pd8 integer, Pd9 integer, Pd10 integer, FOREIGN KEY (StudentId) REFERENCES Student(Id), FOREIGN KEY (Pd1) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd2) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd3) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd4) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd5) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd6) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd7) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd8) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd9) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd10) REFERENCES CourseName(CourseNameId));");
 
-        ArrayList<String> teacherNames = getFileData("teachernames.csv");
-        ArrayList<String> courseNames = getFileData("coursename.csv");
+        ArrayList<String> teacherNames = getFileData("DatabaseProject-main/teachernames.csv");
+        ArrayList<String> courseNames = getFileData("DatabaseProject-main/coursename.csv");
         for (int i = 0; i < courseNames.size(); i++) {
             String[] seperateCourseNames = courseNames.get(i).split(",");
             System.out.println("INSERT INTO CourseName ( CourseName, CourseNameId, CourseType ) VALUES ( " + seperateCourseNames[1] + ", " + (i + 1) + ", " + seperateCourseNames[2] + ");");
