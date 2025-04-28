@@ -27,7 +27,7 @@ public class PopulateDatabase {
         }
         for (int i = 0; i < teacherNames.size(); i++) {
             String[] seperateNames = teacherNames.get(i).split(" ");
-            System.out.println("INSERT INTO Teacher ( FirstName, LastName, Id, departmentId ) VALUES ( \'" + seperateNames[0] + "\', \'" + seperateNames[1] + " " + (i + 1) + "\', " + seperateNames[2] + " );");
+            System.out.println("INSERT INTO Teacher ( FirstName, LastName, Id, departmentId ) VALUES ( \'" + seperateNames[0] + "\', \'" + seperateNames[1].substring(0, seperateNames[1].length() - 1) + "\', " + (i + 1) + "\', " + seperateNames[2] + " );");
         }
         for (int i = 1; i <= 5000; i++) {
             System.out.println("INSERT INTO Student ( Name, Id ) VALUES ( 'Student" + i + "', " + i + ");");
