@@ -15,19 +15,19 @@ public class PopulateDatabase {
                 "CREATE TABLE Teacher_Schedules (TeacherId integer, Pd1 integer, Pd2 integer, Pd3 integer, Pd4 integer, Pd5 integer, Pd6 integer, Pd7 integer, Pd8 integer, Pd9 integer, Pd10 integer, FOREIGN KEY (TeacherId) REFERENCES Teacher(Id), FOREIGN KEY (Pd1) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd2) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd3) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd4) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd5) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd6) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd7) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd8) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd9) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd10) REFERENCES CourseName(CourseNameId));\n" +
                 "CREATE TABLE Student_Schedules (StudentId integer, Pd1 integer, Pd2 integer, Pd3 integer, Pd4 integer, Pd5 integer, Pd6 integer, Pd7 integer, Pd8 integer, Pd9 integer, Pd10 integer, FOREIGN KEY (StudentId) REFERENCES Student(Id), FOREIGN KEY (Pd1) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd2) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd3) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd4) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd5) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd6) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd7) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd8) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd9) REFERENCES CourseName(CourseNameId), FOREIGN KEY (Pd10) REFERENCES CourseName(CourseNameId));");
 
-        ArrayList<String> teacherNames = getFileData("DatabaseProject-main/teachernames.csv");
-        ArrayList<String> courseNames = getFileData("DatabaseProject-main/coursename.csv");
+        ArrayList<String> teacherNames = getFileData("teachernames.csv");
+        ArrayList<String> courseNames = getFileData("coursename.csv");
         for (int i = 0; i < courseNames.size(); i++) {
             String[] seperateCourseNames = courseNames.get(i).split(",");
-            System.out.println("INSERT INTO CourseName ( CourseName, CourseNameId, CourseType ) VALUES ( " + seperateCourseNames[1] + ", " + (i + 1) + ", " + seperateCourseNames[2] + ");");
+            System.out.println("INSERT INTO CourseName ( CourseName, CourseNameId, CourseType ) VALUES ( \'" + seperateCourseNames[1] + "\', " + (i + 1) + ", \'" + seperateCourseNames[2] + "\' );");
         }
         String[] departments = {"Biology", "Chemistry", "CTE", "English", "Health & PE", "LOTE", "Mathematics", "Physics", "Social Studies", "Visual & Performing Arts"};
         for (int i = 1; i <= departments.length; i++) {
-            System.out.println("INSERT INTO Departments ( Id, Name ) VALUES ( " + i + ", '" + departments[i - 1] + "');");
+            System.out.println("INSERT INTO Departments ( Id, Name ) VALUES ( " + i + ", \'" + departments[i - 1] + "\');");
         }
         for (int i = 0; i < teacherNames.size(); i++) {
             String[] seperateNames = teacherNames.get(i).split(" ");
-            System.out.println("INSERT INTO Teacher ( FirstName, LastName, Id, departmentId ) VALUES ( " + seperateNames[0] + ", " + seperateNames[1] + " " + (i + 1) + ", " + seperateNames[2] + " );");
+            System.out.println("INSERT INTO Teacher ( FirstName, LastName, Id, departmentId ) VALUES ( \'" + seperateNames[0] + "\', \'" + seperateNames[1] + " " + (i + 1) + "\', " + seperateNames[2] + " );");
         }
         for (int i = 1; i <= 5000; i++) {
             System.out.println("INSERT INTO Student ( Name, Id ) VALUES ( 'Student" + i + "', " + i + ");");
@@ -48,7 +48,7 @@ public class PopulateDatabase {
             }
         }
         for (int i = 0; i < combinations.size(); i++) {
-            System.out.println("INSERT INTO Room ( Id, Name ) VALUES ( " + (i + 1) + ", '" + combinations.get(i) + "' );");
+            System.out.println("INSERT INTO Room ( Id, Name ) VALUES ( " + (i + 1) + ", \'" + combinations.get(i) + "\' );");
         }
         ArrayList<Integer> teacheridsP1 = new ArrayList<>();
         ArrayList<Integer> teacheridsP2 = new ArrayList<>();
@@ -247,92 +247,92 @@ public class PopulateDatabase {
             studentCourse1 = ((int) (Math.random() * 312) + 1);
             for (int j = 1; j <= 12; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Minor" + j + ", " + studentCourse1 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Minor" + j + "\', " + studentCourse1 +", " + randomGrade +", " + i + ")");
             }
             for (int j = 1; j <= 3; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Major" + j + ", " + studentCourse1 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Major" + j + "\', " + studentCourse1 +", " + randomGrade +", " + i + ")");
             }
             studentCourse2 = ((int) (Math.random() * 312) + 313);
             for (int j = 1; j <= 12; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Minor" + j + ", " + studentCourse2 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Minor" + j + "\', " + studentCourse2 +", " + randomGrade +", " + i + ")");
             }
             for (int j = 1; j <= 3; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Major" + j + ", " + studentCourse2 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Major" + j + "\', " + studentCourse2 +", " + randomGrade +", " + i + ")");
             }
             studentCourse3 = ((int) (Math.random() * 312) + 625);
             for (int j = 1; j <= 12; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Minor" + j + ", " + studentCourse3 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Minor" + j + "\', " + studentCourse3 +", " + randomGrade +", " + i + ")");
             }
             for (int j = 1; j <= 3; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Major" + j + ", " + studentCourse3 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Major" + j + "\', " + studentCourse3 +", " + randomGrade +", " + i + ")");
             }
             studentCourse4 = ((int) (Math.random() * 312) + 937);
             for (int j = 1; j <= 12; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Minor" + j + ", " + studentCourse4 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Minor" + j + "\', " + studentCourse4 +", " + randomGrade +", " + i + ")");
             }
             for (int j = 1; j <= 3; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Major" + j + ", " + studentCourse4 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Major" + j + "\', " + studentCourse4 +", " + randomGrade +", " + i + ")");
             }
             studentCourse5 = ((int) (Math.random() * 312) + 1249);
             for (int j = 1; j <= 12; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Minor" + j + ", " + studentCourse5 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Minor" + j + "\', " + studentCourse5 +", " + randomGrade +", " + i + ")");
             }
             for (int j = 1; j <= 3; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Major" + j + ", " + studentCourse5 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Major" + j + "\', " + studentCourse5 +", " + randomGrade +", " + i + ")");
             }
             studentCourse6 = ((int) (Math.random() * 312) + 1561);
             for (int j = 1; j <= 12; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Minor" + j + ", " + studentCourse6 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Minor" + j + "\', " + studentCourse6 +", " + randomGrade +", " + i + ")");
             }
             for (int j = 1; j <= 3; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Major" + j + ", " + studentCourse6 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Major" + j + "\', " + studentCourse6 +", " + randomGrade +", " + i + ")");
             }
             studentCourse7 = ((int) (Math.random() * 312) + 1873);
             for (int j = 1; j <= 12; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Minor" + j + ", " + studentCourse7 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Minor" + j + "\', " + studentCourse7 +", " + randomGrade +", " + i + ")");
             }
             for (int j = 1; j <= 3; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Major" + j + ", " + studentCourse7 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Major" + j + "\', " + studentCourse7 +", " + randomGrade +", " + i + ")");
             }
             studentCourse8 = ((int) (Math.random() * 312) + 2185);
             for (int j = 1; j <= 12; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Minor" + j + ", " + studentCourse8 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Minor" + j + "\', " + studentCourse8 +", " + randomGrade +", " + i + ")");
             }
             for (int j = 1; j <= 3; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Major" + j + ", " + studentCourse8 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Major" + j + "\', " + studentCourse8 +", " + randomGrade +", " + i + ")");
             }
             studentCourse9 = ((int) (Math.random() * 312) + 2497);
             for (int j = 1; j <= 12; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Minor" + j + ", " + studentCourse9 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Minor" + j + "\', " + studentCourse9 +", " + randomGrade +", " + i + ")");
             }
             for (int j = 1; j <= 3; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Major" + j + ", " + studentCourse9 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Major" + j + "\', " + studentCourse9 +", " + randomGrade +", " + i + ")");
             }
             studentCourse10 = ((int) (Math.random() * 312) + 2809);
             for (int j = 1; j <= 12; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Minor" + j + ", " + studentCourse10 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Minor" + j + "\', " + studentCourse10 +", " + randomGrade +", " + i + ")");
             }
             for (int j = 1; j <= 3; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( Major" + j + ", " + studentCourse10 +", " + randomGrade +", " + i + ")");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Major" + j + "\', " + studentCourse10 +", " + randomGrade +", " + i + ")");
             }
             System.out.println("INSERT INTO Student_Schedules ( StudentId, Pd1, Pd2, Pd3, Pd4, Pd5, Pd6, Pd7, Pd8, Pd9, Pd10 ) VALUES ( " + i + ", " + studentCourse1 + ", " + studentCourse2 + ", " + studentCourse3 + ", " + studentCourse4 + ", " + studentCourse5 + ", " + studentCourse6 + ", " + studentCourse7 + ", " + studentCourse8 + ", " + studentCourse9 + ", " + studentCourse10 + " );");
         }
@@ -353,3 +353,5 @@ public class PopulateDatabase {
         }
     }
 }
+// /home/raziz299/Projects/Database/teachernames.csv
+// /home/raziz299/Porjects/Database/coursename.csv
