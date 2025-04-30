@@ -332,7 +332,7 @@ public class PopulateDatabase {
             }
             for (int j = 1; j <= 3; j++) {
                 randomGrade = (int) (Math.random() * 25) + 75;
-                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Major" + j + "\', " + studentCourse10 +", " + randomGrade +", " + i + ");");
+                System.out.println("INSERT INTO Assignments ( Name, CourseId, Grade, Type, StudentId ) VALUES ( \'Major" + j + "\', " + studentCourse10 +", " + randomGrade +", \'Major\'" + i + ");");
             }
             System.out.println("INSERT INTO Student_Schedules ( StudentId, Pd1, Pd2, Pd3, Pd4, Pd5, Pd6, Pd7, Pd8, Pd9, Pd10 ) VALUES ( " + i + ", " + studentCourse1 + ", " + studentCourse2 + ", " + studentCourse3 + ", " + studentCourse4 + ", " + studentCourse5 + ", " + studentCourse6 + ", " + studentCourse7 + ", " + studentCourse8 + ", " + studentCourse9 + ", " + studentCourse10 + " );");
         }
