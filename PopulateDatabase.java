@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class PopulateDatabase {
     public static void main(String[] args) {
         System.out.println("CREATE TABLE Student (Name varchar(255), Id integer PRIMARY KEY );\n" +
-                "CREATE TABLE Departments (Id integer PRIMARY KEY, Name varchar(255), NumOfTeachers integer );\n" +
+                "CREATE TABLE Departments (Id integer PRIMARY KEY, Name varchar(255) );\n" +
                 "CREATE TABLE Teacher (FirstName varchar(255), LastName varchar(255), Id integer PRIMARY KEY, departmentId integer, FOREIGN KEY (departmentId) REFERENCES Departments(Id));\n" +
                 "CREATE TABLE CourseName (CourseName varchar(255), CourseNameId integer PRIMARY KEY, CourseType varchar(255) );\n" +
                 "CREATE TABLE Room (Id integer PRIMARY KEY, Name varchar(255) );\n" +
